@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { OsmMapComponent, OsmMapMarker } from "./shared/osm-map/osm-map.component";
+import { FilterSidebarComponent } from "./core/filter-sidebar/filter-sidebar.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, OsmMapComponent],
+  imports: [RouterOutlet, OsmMapComponent, FilterSidebarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

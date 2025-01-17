@@ -1,3 +1,6 @@
-<!-- <div style="display: flex; width: 100%; justify-content: center;"> -->
-<app-osm-map [width]="'35vw'" [height]="'25vh'" [centerLatLong]="centerLatLong"></app-osm-map>
-<!-- </div> -->
+<div class="flex flex-row h-screen w-screen">
+  <app-filter-sidebar></app-filter-sidebar>
+
+  <app-osm-map class="mt-5 mb-5" [width]="'calc(100vw - 24rem - 1.25rem)'" [height]="'calc(100vh - 1.25rem)'"
+    [centerLatLong]="centerLatLong"></app-osm-map>
+</div>
